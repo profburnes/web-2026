@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font: 16px Roboto;
+    padding-top: 50px;
+    smo
+}
+
+header {
+    background: #FFF;
+    border-bottom: 1px solid #CCC;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    nav {
+        text-align: center;
+        a {
+            color: #666;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        a:hover {
+            color: #222;
+        }
+    }
+}
+
+.banner {
+    img {
+        width: 100%;
+    }
+}
+
+section {
+    padding: 30px 0;
+    h2 {
+        text-align: center;
+        margin: 20px;
+    }
+}
+
+
+#sobre {
+    
+    img {
+        width: 100%;
+    }
+    p {
+        margin: 10px;
+        text-align: justify;
+    }
+}
+
+#servicos {
+    background: #F1F1F1;
+    .card {
+        border-radius: 5px;
+        border: 1px solid #CCC;
+        padding: 10px;
+        text-align: center;
+        background-color: #FFF;
+        margin: 20px;
+        i {
+            font-size: 30px;
+        }
+    }
+}
+
+#softwares {
+    text-align: center;
+}
+
+footer {
+    background: #333;
+    color: #FFF;
+    text-align: center;
+    padding: 20px 0;
+    p {
+        margin: 10px;
+    }
+}
+
+@media (min-width: 480px) {
+    header {
+        text-align: left;
+        nav {
+            float: right;
+            ul {
+                list-style: none;
+                li {
+                    display: inline-block;
+                    margin: 25px; 
+                }
+            }
+        }
+    }
+
+    main {
+        width: 1200px;
+        margin: auto;
+    }
+
+    #sobre {
+        .row {
+            display: grid;
+            grid-template-columns: 30% 70%;
+            align-items: center;
+        }
+        img {
+            border-radius: 10px;
+        }
+    }
+
+    #servicos {
+        background: #FFF;
+        .row {
+            display: grid;
+            grid-template-columns: repeat(3, 33%);
+            padding: 20px;
+        }
+    }
+
+    #softwares {
+        .row {
+            display: grid;
+            grid-template-columns: repeat(4, 25%);
+            padding: 20px;
+        }
+    }
+}

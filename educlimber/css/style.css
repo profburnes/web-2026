@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 16px Arimo, Arial;
+    padding-top: 60px;
+}
+
+.header {
+    width: 100%;
+    background: linear-gradient(to bottom, #f1f1f1, #f9f9f9);
+    border-bottom: 3px solid #FFF;
+    box-shadow: 0 0 5px #222;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    .header-logo {
+        img {
+            height: 40px;
+        }
+    }
+    .navbar-hide {
+        border: 1px solid #333;
+        color: #666;
+        text-decoration: none;
+        border-radius: 5px;
+        padding: 10px;
+        float: right;
+    }
+    .navbar-menu {
+        width: 100%;
+        display: none;
+        ul {
+            list-style: none;
+            li {
+                background: #FFF;
+                margin-bottom: 5px;
+                padding: 10px;
+                text-align: center;
+                a {
+                    color: #000;
+                    text-decoration: none;
+                }
+                .btn {
+                    border: 1px solid #333;
+                    border-radius: 5px;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+
+.banner {
+    background: url(../imgs/banner.jpg) no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    text-align: center;
+    color: #FFF;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+section {
+    padding: 50px 0;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    margin: 20px;
+}
+
+.sobre {
+    background-color: #f1f1f1;
+    img {
+        width: 100%;
+    }
+}
+
+.footer {
+    background: #120F2D;
+    padding: 30px;
+    color: #FFF;
+    text-align: center;
+    p {
+        margin: 30px 0;
+        a {
+            color: #FFF;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 10px;
+        }
+        a:hover {
+            color: red;
+        }
+    }
+}
+
+p {
+    line-height: 30px;
+}
+
+.row {
+    .col {
+        .card {
+            border: 1px solid #ccc;
+            text-align: center;
+            padding: 20px;
+            margin: 5px;
+            i {
+                font-size: 3em;
+                margin: 20px;
+            }
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+.form {
+    width: 100%;
+    border: 1px solid #CCC;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+button {
+    border: 0;
+    background-color: green;
+    color: #FFF;
+    padding: 10px 20px;
+
+}
+
+.whatsapp {
+    width: 50px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    img {
+        width: 100%;
+    }
+}
+
+.time {
+        .row {
+            .col {
+                img {
+                    width: 100%;
+                    border-radius: 100%;
+                    border: 3px solid red;
+                }
+            }
+        }
+    }
+
+@media (min-width: 480px) {
+    .header {
+        .navbar-hide {
+            display: none;
+        }
+        .navbar-menu {
+            display: block;
+            float: right;
+            width: 50%;
+            text-align: right;
+            ul {
+                margin-top: 10px;
+                li {
+                    display: inline;
+                    background: transparent;
+                    a:hover {
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+    .container {
+        width: 1200px;
+        margin: auto;
+    }
+    .banner {
+        padding: 300px 0;
+    }
+    .row {
+        display: flex;
+        align-items: center;
+        .col {
+            flex: 1;
+            padding: 10px;
+            
+        }
+    }
+    
+}
